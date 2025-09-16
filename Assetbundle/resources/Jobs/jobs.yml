@@ -1,0 +1,14 @@
+resources:
+  jobs:
+    Demo_Job:
+      name: Demo Job
+      tasks:
+        - task_key: Ingestion
+          notebook_task:
+            notebook_path: /Workspace/Users/sundarg1303@gmail.com/Practice/Assetbundle/src/Notebook/Ingestion
+            base_parameters:
+              catalog: dbassetbundle
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED

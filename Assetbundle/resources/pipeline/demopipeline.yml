@@ -1,0 +1,15 @@
+resources:
+  pipelines:
+    pipeline_demopipeline:
+      name: demopipeline
+      libraries:
+        - glob:
+            include: /Workspace/Users/sundarg1303@gmail.com/Practice/Assetbundle/src/demopipeline/transformations/**
+      schema: bronze
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: dbassetbundle
+      serverless: true
+      root_path: /Workspace/Users/sundarg1303@gmail.com/Practice/Assetbundle/src/demopipeline
